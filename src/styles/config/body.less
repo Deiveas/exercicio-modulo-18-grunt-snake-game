@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
+
 }
 
 header {
@@ -38,11 +38,32 @@ h4 {
 footer {
     h2 {
         padding-top: 15px;
-        
+
     }
 }
 
 .modal-title {
     color: #colors[tituloModalColors];
     font-weight: bold;
+}
+
+#controls {
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    /* Duas colunas */
+    grid-gap: 10px;
+    /* Espaço entre os botões */
+    justify-items: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+
+    button {
+        width: 50px;
+        /* Largura dos botões */
+        height: 50px;
+        /* Altura dos botões */
+        font-size: 20px;
+        /* Tamanho do texto dentro dos botões */
+    }
 }

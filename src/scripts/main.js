@@ -94,3 +94,27 @@ function iniciarJogo() {
 
 let jogo = setInterval(iniciarJogo, 100);
 
+// Obtenha os elementos de controle de toque
+const upButton = document.getElementById("up");
+const downButton = document.getElementById("down");
+const leftButton = document.getElementById("left");
+const rightButton = document.getElementById("right");
+
+// Adicione eventos de escuta para os botões de controle de toque
+upButton.addEventListener("click", () => {
+  update({ keyCode: 38 }); // Simule uma tecla pressionada para cima (keyCode 38)
+});
+
+downButton.addEventListener("click", () => {
+  update({ keyCode: 40 }); // Simule uma tecla pressionada para baixo (keyCode 40)
+});
+
+leftButton.addEventListener("click", () => {
+  update({ keyCode: 37 }); // Simule uma tecla pressionada para a esquerda (keyCode 37)
+});
+
+rightButton.addEventListener("click", () => {
+  update({ keyCode: 39 }); // Simule uma tecla pressionada para a direita (keyCode 39)
+});
+
+
